@@ -20,6 +20,7 @@ public class PostmanEchoTest {
                 .then()
                 .statusCode(200)
                 .body("url", equalTo("https://postman-echo.com/post") )
-        ;
+                .body("data", equalTo("some data"));
+
     }
 }
